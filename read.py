@@ -23,3 +23,13 @@ for d in data:
         good.append(d)
 print('留言裡有good的有', len(good), '筆資料')
 print(good[0])
+
+good = [d for d in data if 'good' in d] #The first d equals to good.append(d)
+print(good)
+
+bad = ['bad' in d for d in data]
+print(bad)
+
+bad = []
+for d in data:
+    bad.append('bad' in d)
